@@ -1,5 +1,5 @@
-TASK-1 
+Add /TASK-1/HTML for the task: 
 Build a Form
 
-TASK-2
+Add /TASK-2/HTML for the task:
 Create an Image Gallery
