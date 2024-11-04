@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <h1>Software Engineer</h1>
+    <h3>Application Form</h3>
+
+    <form action="" autocomplete="on">
+      <label for="fullname">Full Name <span style="color: red;">*</span></label>
+      <br />
+      <input type="text" name="fullname" id="fullname" required/>
+      <br />
+      <br />
+
+      <label for="dob">Date of Birth</label>
+      <br />
+      <input type="date" name="dob" id="dob" />
+      <br />
+      <br />
+
+      <label for="mailid"> Mail ID <span style="color: red;">*</span></label>
+      <br />
+      <input type="email" name="mailid" id="mailid" required/>
+      <br />
+      <br />
+
+      <label for="contact">Contact Number (without country code) <span style="color: red;">*</span></label>
+      <br />
+      <input type="tel" name="contact" id="contact" minlength="10" maxlength="10" required/>
+      <br />
+      <br />
+
+      <label for="gender">Gender</label>
+      <br />
+      <input list="genders" name="gender" id="gender" />
+      <datalist id="genders">
+        <option value="Male"></option>
+        <option value="Female"></option>
+        <option value="Prefer not to say"></option>
+      </datalist>
+
+      <br />
+      <br />
+
+      <h4>Education Details</h4>
+      <label for="education">Degree <span style="color: red;">*</span></label>
+      <br />
+      <input list="degrees" name="education" id="education" required/>
+      <datalist id="degrees">
+        <option value="BE/BTECH"></option>
+        <option value="MCA/MBA"></option>
+        <option value="BA/BCOM/BSC/BCA"></option>
+        <option value="MTECH"></option>
+        <option value="OTHERS"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <label for="branch">Branch <span style="color: red;">*</span></label>
+      <br />
+      <input list="braches" name="branch" id="branch" required/>
+      <datalist id="braches">
+        <option value="CSE"></option>
+        <option value="ECE"></option>
+        <option value="EEE"></option>
+        <option value="CIVIL"></option>
+        <option value="MECHANICAL"></option>
+        <option value="DATA SCIENCE"></option>
+        <option value="IT"></option>
+        <option value="OTHERS"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <label for="year">Passed out Month and Year <span style="color: red;">*</span></label>
+      <br />
+      <input type="month" name="year" id="year" max="2024-12-31" required/>
+      <br />
+      <br />
+
+      <label for="cgpa">CGPA <span style="color: red;">*</span></label>
+      <br />
+      <input type="number" name="cgpa" id="cgpa" step="0.01" min="0" max="10" required/>
+      <br />
+      <br />
+
+      <h4>Work Experience, if any</h4>
+      <label for="oname">Current Organization Name</label>
+      <br />
+      <input type="text" name="oname" id="oname" />
+      <br />
+      <br />
+
+      <label for="role">Role</label>
+      <br />
+      <input type="text" name="role" id="role" />
+      <br />
+      <br />
+
+      <label for="yoe">No. of Years of Experience</label>
+      <br />
+      <input type="number" name="yoe" id="yoe" />
+      <br />
+      <br />
+
+      <label for="np">Notice Period</label>
+      <br />
+      <input list="noticeperiod" name="np" id="np" />
+      <datalist id="noticeperiod">
+        <option value="0 days"></option>
+        <option value="15 days"></option>
+        <option value="30 days"></option>
+        <option value="45 days"></option>
+        <option value="60 days"></option>
+        <option value="90 days"></option>
+        <option value="OTHERS"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <label for="suitable"
+        >Briefly explain why do you think you are suitable for this job. <span style="color: red;">*</span></label
+      >
+      <br />
+      <input
+        type="text"
+        name="suitable"
+        id="suitable"
+        maxlength="250"
+        size="65"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="resume">Upload your resume <span style="color: red;">*</span></label>
+      <br />
+      <input type="file" name="resume" id="resume" required/>
+      <br />
+      <br />
+
+      <label for="cv">Upload your Cover Letter</label>
+      <br />
+      <input type="file" name="cv" id="cv" />
+      <br />
+      <br />
+
+      <input type="submit" value="Submit Here" required/>
+    </form>
+  </body>
+</html>
