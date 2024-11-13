@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Forms</legend>
+
+      <form action="./day1.html">
+        <label for="opts">Choose an option below:</label>
+        <br />
+        <select name="opts" id="opts">
+          <option value="">--select--</option>
+          <optgroup label="--select--">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </optgroup>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="np">Notice Period</label>
+        <br />
+        <input list="noticeperiod" name="np" id="np" />
+        <datalist id="noticeperiod">
+          <option value="0 days"></option>
+          <option value="15 days"></option>
+          <option value="30 days"></option>
+          <option value="45 days"></option>
+          <option value="60 days"></option>
+          <option value="90 days"></option>
+          <option value="OTHERS"></option>
+        </datalist>
+        <br />
+        <br />
+
+        <input
+          type="image"
+          src="./arrow-mark-icon-black-sign-260nw-2305288789.webp"
+          height="50"
+          formaction="./day6.html"
+        />
+        <br />
+        <br />
+
+        <input type="submit" />
+        <br />
+        <br />
+        <input
+          type="submit"
+          value="navigate to day5"
+          formaction="./day5.html"
+        />
+        <br />
+        <br />
+        <input type="reset" />
+      </form>
+    </fieldset>
+
+    <h4>Change the screen's width for different images</h4>
+
+    <picture>
+        <source media="(min-width:700px)" srcset="./s23_ultra.jpg" height="200">
+        <source media="(min-width:500px)" srcset="./sony_headphone.jpg" height="200">
+        <source media="(min-width:300px)" srcset="./tissot_watch.webp" height="200">
+        <img src="./image.png" alt="" height="50" >
+    </picture>
+  </body>
+</html>
